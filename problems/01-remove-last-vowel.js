@@ -8,7 +8,7 @@ Vowels are the letters "a", "e", "i", "o", "u".
 
 
 function removeLastVowel(word) {
-    const vowels = 'aeiouAEIOU';                                   // Assign vowels within the function
+    const vowels = 'aeiou';                                   // Assign vowels within the function
     let arr = word.split('');                                      // Convert the string to an array to seperate the individual letters
     for (let i = arr.length - 1; i >= 0; i--) {                    // Loop thru the entire array
         if (vowels.includes(arr[i])) {                             // Remove and break the loop if the character is a vowel
